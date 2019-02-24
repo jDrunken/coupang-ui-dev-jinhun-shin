@@ -1,0 +1,155 @@
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, font, img, ins, q, s, samp, strike, strong, sub, sup, dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+    line-height: 1.6;
+    border: 0 none;
+}
+
+body {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+
+    font-size: 1em;
+
+    margin: 0 auto;
+    font-size: 100%;
+    line-height: 1.3em;
+    word-break: normal;
+    text-size-adjust: 100%;
+    overflow-x:hidden;
+    background:$white;
+    font-family: sans-serif;
+}
+
+:lang(zh) * {
+    word-break:break-all;
+}
+
+sub,sup,input,form,textarea {
+    font-family:inherit;
+    font-size:inherit;
+}
+
+// heading group
+h1,h2,h3,h4,h5,h6 {
+    font-family:inherit;
+    line-height:1.1;
+    font-weight:normal;
+}
+
+ul,ol,dl,dt,dd,li {
+    margin:0;
+    padding:0;
+    list-style-type:none;
+}
+
+p {
+    margin:0;
+}
+
+
+// anchor
+a { }
+
+a:link {
+    text-decoration:none;
+}
+
+a[disabled] {
+    cursor:default;
+    cursor:not-allowed;
+    opacity:0.7;
+}
+
+table {
+    border-collapse:collapse;
+    max-width:100%;
+}
+
+// zero club
+h1,h2,h3,h4,h5,h6,
+figure, figcaption,
+dt,dd,dl,
+iframe {
+    padding:0;
+    margin:0;
+}
+
+iframe {
+    border:0;
+}
+
+// typo
+address, em {
+    font-style:normal;
+}
+
+em {
+    font-weight:500;
+}
+
+strong {
+    font-weight:700;
+}
+
+
+// ------------------------------------------------------------
+// 기본 엘리먼트 스타일 지정
+// ------------------------------------------------------------
+
+
+button[type='button'],
+button[type='submit'],
+a.button,
+input[type='submit'] {
+    // reset
+    cursor:pointer;
+    border-width:0;
+    border-style:solid;
+    border-color:transparent;
+    border-radius:0;
+
+    font-family:inherit;
+    background:transparent;
+
+    appearance:none;
+
+    display:inline-block;
+    line-height:1.1;
+    box-sizing:border-box;
+    text-align: center;
+    font-family:inherit;
+    border-radius:2px;
+    padding:0;
+    margin:0;
+
+    &:first-letter {
+        text-transform:uppercase;
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+p {
+    word-break:keep-all;
+}
+
+// 터치시 생기는 피드백 컬러를 삭제함
+a,
+button {
+    outline:0;
+    font-size:inherit;
+    font-family:inherit;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+
+button[disabled] {
+    background-color:$gray !important;
+    cursor:not-allowed;
+    border-color:$gray !important;
+}

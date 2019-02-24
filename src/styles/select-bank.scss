@@ -1,0 +1,17 @@
+section.select.bank {
+    h1 {
+        @include screen_reader();
+    }
+    h2 {
+        text-align:center;
+        margin:1em;
+    }
+    ul li button {
+        width:100%;
+        display:block;
+        text-align:center;
+        padding:10px;
+        margin:10px 0;
+        border:1px solid #aaa;
+    }
+}

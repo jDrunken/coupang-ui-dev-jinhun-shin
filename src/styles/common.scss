@@ -1,0 +1,108 @@
+html {
+    height:100%;
+}
+
+body {
+    background:$black;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+}
+
+main {
+    flex:1;
+    background:$white;
+    // min-width:320px;
+    // max-width:420px;
+    // min-height:480px;
+    // max-height:667px;
+    width:320px;
+    max-width:320px;
+    height:480px;
+    margin:0 auto;
+    position:relative;
+
+    padding:10px;
+    overflow-y:scroll;
+}
+
+// ------------------------------------------------------------
+a.button,
+button.button {
+    font-size:1em;
+    width:100%;
+    text-align:center;
+    display:block;
+    padding:10px 0;
+    font-weight:700;
+    border-width:1px;
+    border-style:solid;
+
+    &.confirm {
+        background-color:$green;
+        border-color:$green;
+        color:$white;
+    }
+
+    &.reaction {
+        background:$white;
+        border-color:$green;
+        color:$green
+    }
+}
+
+a.set.account {
+    &:before {
+        content:'+ ';
+    }
+}
+
+form.set {
+    margin-top:20px;
+
+    ul {
+        border:1px solid #ccc;
+    }
+
+    li {
+        display:grid;
+        grid-template-rows:1fr;
+        grid-template-columns:70px auto;
+        grid-row-gap:10px;
+        grid-column-gap:10px;
+
+        padding:10px;
+
+        border-top:1px solid #ccc;
+
+        p {
+            grid-column-start:2;
+        }
+
+        &:first-child {
+            border-top:0;
+        }
+
+        input[type="radio"] {
+            display:inline-block;
+        }
+        input[type="radio"] + label {
+            display:inline-block;
+            width:30%;
+        }
+    }
+}
+
+
+p.notice {
+    background:#eee;
+    margin-top:1em;
+    text-align:center;
+    padding:1em;
+}
+
+p.alert {
+    color:$red;
+}

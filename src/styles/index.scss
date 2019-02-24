@@ -1,0 +1,23 @@
+section.index {
+    h1 { @include screen-reader () }
+
+    h2 {
+        text-align:center;
+        margin:1em;
+    }
+
+    ul {
+        border:1px solid $gray;
+        li {
+            border-top:1px solid $gray;
+            padding:1em;
+            &:first-child {
+                border:0;
+            }
+        }
+    }
+
+    .btn-area {
+        margin-top:1em;
+    }
+}

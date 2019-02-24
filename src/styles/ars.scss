@@ -1,0 +1,46 @@
+section.ars {
+    .calling {
+        position:absolute;
+        top:0;
+        left:0;
+        bottom:0;
+        right:0;
+
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        background:#fff;
+
+        h1 {
+            font-size:1.5em;
+            font-weight:900;
+        }
+    }
+
+    .identify {
+        h1 {
+            text-align:center;
+
+            strong {
+                color:$green;
+            }
+        }
+
+        .btn-area {
+            margin-top:1em;
+
+            display:flex;
+            justify-content:stretch;
+        }
+
+        a {
+            flex:1;
+            text-align:center;
+            padding:10px;
+
+            &:first-child {
+                margin-right:10px;
+            }
+        }
+    }
+}
